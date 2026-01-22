@@ -1,0 +1,33 @@
+digraph ROBDD {
+    rankdir=TB;
+    size="10";
+    10 [label="x1", shape=ellipse, style=solid];
+    10 -> 7 [label="0", color=red, style=dashed, fontcolor=black];
+    10 -> 9 [label="1", color=green, style=solid, fontcolor=black];
+    7 [label="x2", shape=ellipse, style=solid];
+    7 -> 4 [label="0", color=red, style=dashed, fontcolor=black];
+    7 -> 6 [label="1", color=green, style=solid, fontcolor=black];
+    9 [label="x2", shape=ellipse, style=solid];
+    9 -> 6 [label="0", color=red, style=dashed, fontcolor=black];
+    9 -> 8 [label="1", color=green, style=solid, fontcolor=black];
+    4 [label="x3", shape=ellipse, style=solid];
+    4 -> 0 [label="0", color=red, style=dashed, fontcolor=black];
+    4 -> 3 [label="1", color=green, style=solid, fontcolor=black];
+    6 [label="x3", shape=ellipse, style=solid];
+    6 -> 3 [label="0", color=red, style=dashed, fontcolor=black];
+    6 -> 5 [label="1", color=green, style=solid, fontcolor=black];
+    8 [label="x3", shape=ellipse, style=solid];
+    8 -> 5 [label="0", color=red, style=dashed, fontcolor=black];
+    8 -> 1 [label="1", color=green, style=solid, fontcolor=black];
+    0 [label="0 (False)", shape=box, style=filled, fillcolor=lightpink, color=lightpink];
+    3 [label="x4", shape=ellipse, style=solid];
+    3 -> 0 [label="0", color=red, style=dashed, fontcolor=black];
+    3 -> 2 [label="1", color=green, style=solid, fontcolor=black];
+    5 [label="x4", shape=ellipse, style=solid];
+    5 -> 2 [label="0", color=red, style=dashed, fontcolor=black];
+    5 -> 1 [label="1", color=green, style=solid, fontcolor=black];
+    1 [label="1 (True)", shape=box, style=filled, fillcolor=lightgreen, color=lightgreen];
+    2 [label="x5", shape=ellipse, style=solid];
+    2 -> 0 [label="0", color=red, style=dashed, fontcolor=black];
+    2 -> 1 [label="1", color=green, style=solid, fontcolor=black];
+}
