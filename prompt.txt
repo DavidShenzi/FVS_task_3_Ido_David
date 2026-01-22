@@ -1,0 +1,15 @@
+I need to write a Python script for my formal verification assignment to build ROBDDs (Reduced Ordered Binary Decision Diagrams) for boolean formulas.
+The program should include:
+
+A class that builds BDDs using the standard reduction rules - eliminating redundant nodes where both branches point to the same node, and ensuring uniqueness so we don't create duplicate nodes
+It should be able to handle both string formulas like "(a and not c) or (b xor d)" and also Python functions for more complex logic like majority vote
+Generate output in DOT graph format for visualization, with terminal node 0 (False) in light pink, terminal node 1 (True) in light green, and edges colored with red dashed lines for 0-branches and green solid lines for 1-branches
+Save each result to a text file
+I need to implement it for the formulas from assignment 2, question 1:
+
+Formula: ((a and not c) or (b ^ d)) with variables a, b, c, d
+Majority function for 5 variables - returns true when at least 3 of x1, x2, x3, x4, x5 are true
+Comparison X > Y for 3-bit binary numbers with variables x3, y3, x2, y2, x1, y1 in this order
+I also want to add one additional formula, maybe parity check or something similar.
+
+The program should print status messages showing what files are being saved and where.
